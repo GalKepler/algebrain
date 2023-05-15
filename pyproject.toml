@@ -5,9 +5,7 @@ build-backend = "flit.buildapi"
 [project]
 name =  "algebrain"
 version = "0.0.1"
-authors = [
-    {name = "Dekel Wainer", email = "dekel@thewainers.com", name = "Gal Kepler", email = "galkepler@gmail.com"},
-]
+authors = ["Dekel Wainer <dekel@thewainers.com>","Gal Kepler <galkepler@gmail.com>"]
 description = "Python-Functionalizing Algebraic Expressions and Equations"
 readme = "README.md"
 classifiers = [
