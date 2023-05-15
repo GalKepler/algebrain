@@ -3,22 +3,27 @@ requires = ["flit"]
 build-backend = "flit.buildapi"
 
 [project]
-name =  "py-project-toml"
+name =  "algebrain"
+version = "0.0.1"
 authors = [
-    {name = "Daniel Ciborowski", email = "dciborow@microsoft.com"},
+    {name = "Dekel Wainer", email = "dekel@thewainers.com", name = "Gal Kepler", email = "galkepler@gmail.com"},
 ]
-description = "Sample Python Project for creating a new Python Module"
+description = "Python-Functionalizing Algebraic Expressions and Equations"
 readme = "README.md"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10"
 ]
 requires-python = ">=3.9"
 dynamic = ["version"]
+repository = "https://github.com/GalKepler/algebrain"
+homepage = "https://github.com/GalKepler/algebrain"
+license = "MIT"
 
 [project.optional-dependencies]
 spark = [
