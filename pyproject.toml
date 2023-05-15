@@ -5,7 +5,7 @@ build-backend = "flit.buildapi"
 [project]
 name =  "algebrain"
 version = "0.0.1"
-authors = ["Dekel Wainer <dekel@thewainers.com>","Gal Kepler <galkepler@gmail.com>"]
+authors = [{name = "Dekel Wainer", email="dekel@thewainers.com"},{name="Gal Kepler", email="galkepler@gmail.com"}]
 description = "Python-Functionalizing Algebraic Expressions and Equations"
 readme = "README.md"
 classifiers = [
@@ -19,9 +19,11 @@ classifiers = [
 ]
 requires-python = ">=3.9"
 dynamic = ["version"]
-repository = "https://github.com/GalKepler/algebrain"
+
+[project.urls]
+Source = "https://github.com/GalKepler/algebrain"
+Tracker = "https://github.com/GalKepler/algebrain/issues"
 homepage = "https://github.com/GalKepler/algebrain"
-license = "MIT"
 
 [project.optional-dependencies]
 spark = [
@@ -47,10 +49,6 @@ test = [
     "shellcheck-py==0.9.0.2"
 ]
 
-[project.urls]
-Documentation = "https://github.com/microsoft/python-package-template/tree/main#readme"
-Source = "https://github.com/microsoft/python-package-template"
-Tracker = "https://github.com/microsoft/python-package-template/issues"
 
 [tool.flit.module]
 name = "python_package"
